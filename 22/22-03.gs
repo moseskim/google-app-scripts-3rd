@@ -15,16 +15,17 @@ function removeTag_(str) {
 }
 
 function myFunction22_03_03() {
-  const zipcode = '7830060';
-  const url = 'https://zipcloud.ibsnet.co.jp/api/search?zipcode=' + zipcode;
+  const busRouteId = '100100118';
+  const url = 'http://ws.bus.go.kr/api/rest/buspos/getBusPosByRouteSt?serviceKey={serviceKey}&busRouteId=' + busRouteId + '&startOrd=1&endOrd=20&resultType=json';
   const response = UrlFetchApp.fetch(url);
   
   const obj = JSON.parse(response.getContentText());
-  console.log(`상태 코드: ${obj.status}`);
+  console.log(`obj: ${obj.msgHeader.headerMsg}`)
+  console.log(`obj.msgBody.itemList: ${obj.msgBody.itemList}`);
   
-  const result = obj.results[0];
-  const {address1, address2, address3} = result;
-  console.log(`都道府県名: ${address1}`);
-  console.log(`市区町村名: ${address2}`);
-  console.log(`町域名: ${address3}`);
+  const result = obj.msgBody.itemList[0];
+  const {vehId, plainNo, busType} = result;
+  console.log(`VendorId: ${vehId}`);
+  console.log(`Bus Number: ${plainNo}`);
+  console.log(`Bus Type: ${busType}`);
 }
