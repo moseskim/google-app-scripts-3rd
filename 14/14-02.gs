@@ -6,13 +6,11 @@ function myFunction14_02_01() {
   const formByUrl = FormApp.openByUrl(url);
   console.log(formByUrl.getTitle()); //설문지명
   
-  const id = '********'; //フォームID
+  const id = '********'; //설문지 ID
   const formById = FormApp.openById(id);
-  console.log(formById.getTitle()); //フォーム名
+  console.log(formById.getTitle()); //설문지명
 }
 
 function myFunction14_02_02() {
-  FormApp.create('もくもく会参加申込みフォーム');
-  // const form = FormApp.create('もくもく会参加申込みフォーム');
-  // form.setTitle('もくもく会参加申し込みフォーム');
+  FormApp.create('가을 음악회 참석 설문지');
 }
