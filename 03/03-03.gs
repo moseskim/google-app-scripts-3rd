@@ -1,6 +1,6 @@
 function myFunction03_03_01() {
   console.log(typeof 123); //number
-  console.log(typeof "hoge"); //string
+  console.log(typeof "foo"); //string
   console.log(typeof false); //boolean
   console.log(typeof {}); //object
 }
