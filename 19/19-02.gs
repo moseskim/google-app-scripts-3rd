@@ -1,5 +1,5 @@
 function myFunction19_02_01() {
-  const id = '********'; //フォルダID
+  const id = '********'; //폴더 ID
   const folder = DriveApp.getFolderById(id); 
   const files = folder.getFiles();
   
@@ -11,7 +11,7 @@ function myFunction19_02_01() {
 }
 
 function myFunction19_02_02() {
-  const id = '********'; //ZIPファイルのファイルID  
+  const id = '********'; //ZIP 파일 ID  
   const file = DriveApp.getFileById(id);
   const blobs = Utilities.unzip(file.getBlob());
   
@@ -23,9 +23,9 @@ function myFunction19_02_02() {
 function myFunction19_02_03() { 
   const values = SpreadsheetApp.getActiveSheet().getDataRange().getValues(); 
   const csv = values.reduce((str, row) => str + '\n' + row);
-  const blob = Utilities.newBlob(csv, MimeType.CSV, '果物購入リスト.csv'); 
+  const blob = Utilities.newBlob(csv, MimeType.CSV, '과일구매리스트.csv'); 
   
-  const id = '********'; //保存先フォルダID
+  const id = '********'; //저장 폴더 ID
   const folder = DriveApp.getFolderById(id);
   folder.createFile(blob);
 }
@@ -33,16 +33,16 @@ function myFunction19_02_03() {
 function myFunction19_02_04() { 
   const values = SpreadsheetApp.getActiveSheet().getDataRange().getValues(); 
   const csv = values.reduce((str, row) => str + '\n' + row);
-  const blob = Utilities.newBlob('', MimeType.CSV, '果物購入リスト_Shift-JIS.csv')
-    .setDataFromString(csv, 'Shift-JIS');
+  const blob = Utilities.newBlob('', MimeType.CSV, '과일구매리스트_KSC5601.csv')
+    .setDataFromString(csv, 'KSC5601');
 
-  const id = '********'; //保存先フォルダID
+  const id = '1Q7_PHAGpSjZUJyq9864_bbp6aveSchye'; //저장 폴더 ID
   const folder = DriveApp.getFolderById(id);
   folder.createFile(blob);
 }
 
 function myFunction19_02_05() {
-  const id = '********'; //ファイルID
+  const id = '********'; //파일 ID
   const blob = DriveApp.getFileById(id).getBlob();
   const csv = blob.getDataAsString();
   
