@@ -15,6 +15,6 @@ function myFunction12_03_01() {
 function myFunction12_03_02() {
   const document = DocumentApp.create('새 문서');
 
-  document.addHeader().setText('머릿글 섹션');
+  document.addHeader().setText('머리글 섹션');
   document.addFooter().setText('바닥글 섹션');
 }
