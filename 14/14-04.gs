@@ -22,7 +22,7 @@ function myFunction14_04_02() {
   form.addTextItem().setTitle('이름').setRequired(true);
   
   form.addMultipleChoiceItem()
-    .setTitle('사용하는 PC은 운영체제는 무엇입니까?')
+    .setTitle('사용하는 PC의 운영체제는 무엇입니까?')
     .setChoiceValues(['Windows', 'Mac'])
     .setRequired(true);  
   
