@@ -4,23 +4,23 @@ function myFunction13_05_01() {
     
   const shape = presentation.getSlides()[2].getShapes()[5];
   
-  console.log(shape.getTitle()); //長方形
+  console.log(shape.getTitle()); //사각형
   console.log(shape.getDescription()); //
-  console.log(shape.getObjectId()); //オブジェクトID
+  console.log(shape.getObjectId()); //객체 ID
 
   console.log(shape.getPageElementType().toString()); //SHAPE
   console.log(shape.getShapeType().toString()); //RECTANGLE
   
-  console.log(shape.getLeft()); //左位置
-  console.log(shape.getTop()); //上位置
-  console.log(shape.getWidth()); //幅
-  console.log(shape.getHeight()); //高さ
-  console.log(shape.getRotation()); //回転角度
+  console.log(shape.getLeft()); //왼쪽 위치
+  console.log(shape.getTop()); //위쪽 위치
+  console.log(shape.getWidth()); //폭
+  console.log(shape.getHeight()); //높이
+  console.log(shape.getRotation()); //회전 각도
 
   const image = presentation.getSlides()[3].getImages()[0];
   
   console.log(image.getPageElementType().toString()); //IMAGE
-  console.log(image.getObjectId()); //オブジェクトID
+  console.log(image.getObjectId()); //객체 ID
   console.log(image.getSourceUrl()); //https://tonari-it.com/wp-content/uploads/sea.jpg
 }
 
@@ -28,7 +28,7 @@ function myFunction13_05_02() {
   const id = '********';
   const presentation = SlidesApp.openById(id);  
  
-  const shapeId = '********'; //シェイプのオブジェクトID
+  const shapeId = '********'; //셰이프 객체 ID
   const shape = presentation.getPageElementById(shapeId);
   
   shape
@@ -37,7 +37,7 @@ function myFunction13_05_02() {
     .setRotation(45)
     .bringToFront();
   
-  const imageId = '********'; //画像のオブジェクトID 
+  const imageId = '********'; //이미지 객체 ID 
   const image = presentation.getPageElementById(imageId)
     
   image
