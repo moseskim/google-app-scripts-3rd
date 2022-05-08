@@ -3,7 +3,7 @@ function myFunction13_04_01() {
   const presentation = SlidesApp.openById(id);
   const slide = presentation.getSlides()[0];
 
-  console.log(slide.getObjectId()); //スライドのオブジェクトID
+  console.log(slide.getObjectId()); //슬라이드의 객체 ID
   console.log(slide.getPageType().toString()); //SLIDE
   console.log(slide.getSlideLinkingMode().toString()); //NOT_LINKED
   console.log(slide.getSourcePresentationId()); //null
@@ -42,10 +42,10 @@ function myFunction13_04_03() {
 
   const pageElement = slide.getPageElements()[0];
   const objectId = pageElement.getObjectId();
-  console.log(objectId); //オブジェクトID
+  console.log(objectId); //객체 ID
   
   const pageElementById = presentation.getPageElementById(objectId);
-  console.log(pageElementById.getTitle()); //タイトル
+  console.log(pageElementById.getTitle()); //제목
 }
 
 function myFunction13_04_04() {
