@@ -1,11 +1,11 @@
-//後ほど実行する
+//나중에 실행한다
 function myFunction14_04_01() { 
-  const id = '********'; //フォームID
+  const id = '********'; //설문지 ID
   const form = FormApp.openById(id);  
   const item = form.getItems(FormApp.ItemType.MULTIPLE_CHOICE)[0];
 
-  console.log(item.getTitle()); //お持ちのPCは？
-  console.log(item.getId()); //アイテムID
+  console.log(item.getTitle()); //사용하는 PC의 운영체제는 무엇입니까?
+  console.log(item.getId()); //아이템 ID
   console.log(item.getHelpText()); //
   console.log(item.getType().toString()); //MULTIPLE_CHOICE
   console.log(item.getIndex()); //1
@@ -14,24 +14,24 @@ function myFunction14_04_01() {
 }
 
 function myFunction14_04_02() {
-  const title = 'もくもく会参加申込みフォーム';
-  const description = '次回のもくもく会についての参加申込みフォームです。';
+  const title = '가을 모임 참가 신청 설문지';
+  const description = '다음 모임 참가 신청 설문지입니다.';
   
   const form = FormApp.create(title);
   form.setDescription(description);    
-  form.addTextItem().setTitle('氏名').setRequired(true);
+  form.addTextItem().setTitle('이름').setRequired(true);
   
   form.addMultipleChoiceItem()
-    .setTitle('お持ちのPCのOSは？')
+    .setTitle('사용하는 PC은 운영체제는 무엇입니까?')
     .setChoiceValues(['Windows', 'Mac'])
     .setRequired(true);  
   
   form.addCheckboxItem()
-    .setTitle('興味があるプログラム言語は？')
+    .setTitle('관심이 있는 프로그래밍 언어는 무엇입니까?')
     .setChoiceValues(['VBA', 'Google Apps Script', 'Python'])
     .showOtherOption(true);
   
   form.addListItem()
-    .setTitle('お住まいの都道府県は？')
-    .setChoiceValues(['東京都', '埼玉県', '千葉県', '神奈川県']);
+    .setTitle('거주지 주소(시)는 어디입니까?')
+    .setChoiceValues(['서울시', '부산시', '광주시', '대전시']);
 }
