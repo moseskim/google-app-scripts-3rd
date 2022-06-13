@@ -46,7 +46,7 @@ function myFunction11_03_04() {
   const endTime = new Date('2021/9/10 19:00');
   const options = {
     description: '저녁 시간에 늦지 않기',
-    location: '04340 서울특별시 용산구 남산공원길 103',
+    location: '00345 서울 종로구 효자로 12 국립고궁박물관',
     guests: 'guest@example.com',
     sendInvites: true  
   };
