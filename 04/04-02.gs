@@ -50,7 +50,7 @@ function myFunction04_02_05() {
     console.log('[1, 2, 3]은 true');
   }
   if ({lunch: 'curry'}) {
-    console.log("{lunch: 'curry'}은 true");
+    console.log("{lunch: 'curry'}는 true");
   }
 }
 
