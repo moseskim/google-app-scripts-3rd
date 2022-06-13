@@ -2,7 +2,7 @@ function myFunction13_03_01() {
   const id = '********';
   const presentation = SlidesApp.openById(id);
   
-  console.log(presentation.getName()); //프레젠테이션명
+  console.log(presentation.getName()); //프레젠테이션 이름
   console.log(presentation.getId()); //프레젠테이션 ID
   console.log(presentation.getUrl()); //프레젠테이션 URL
   
