@@ -1,5 +1,5 @@
 function myFunction12_04_01() {
-  const id = '********'; //ドキュメントID
+  const id = '********'; // 문서 ID
   const document = DocumentApp.openById(id);
   const body = document.getBody();
   
@@ -23,7 +23,7 @@ function myFunction12_04_01() {
 }
 
 function myFunction12_04_02() {
-  const id = '********'; // 도큐먼트 ID
+  const id = '********'; // 문서 ID
   const document = DocumentApp.openById(id);
   const body = document.getBody();
 
