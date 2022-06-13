@@ -6,6 +6,7 @@ function myFunction03_04_02() {
 function myFunction03_04_03() { 
   const numbers = [10, 30, 20, 40];
   numbers[1] = 50; 
+  numbers[4] = 60; 
   console.log(numbers); //[10, 50, 20, 40, 60]
 }
 
