@@ -1,4 +1,4 @@
-//샘플21-3-1
+// 예제 21-3
 // function onEdit(e) {
 //  const {range, value, oldValue} = e;
 //  const msg = `${range.getRow()}, ${range.getColumn()}: ${oldValue} → ${value}`;
