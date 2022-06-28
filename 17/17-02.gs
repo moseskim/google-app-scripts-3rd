@@ -1,4 +1,4 @@
-//샘플17-2-1
+// 예제 17-1
 function showAlert() {
   const ui = DocumentApp.getUi();
   const title = '경고 다이얼로그 예';
@@ -17,7 +17,7 @@ function showAlert() {
   }
 }
 
-//샘플17-2-2
+// 예제 17-2
 function showPrompt() {
   const ui = DocumentApp.getUi();
   const title = '입력 다이얼로그 예';
