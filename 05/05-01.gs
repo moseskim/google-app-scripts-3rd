@@ -1,4 +1,4 @@
-// 샘플 5-1-1
+// 예제 5-1
 function sayHello() {
   console.log('Hello!'); 
 }
@@ -7,7 +7,7 @@ function sayGoodBye() {
   console.log('Good bye.'); 
 }
 
-// 샘플 5-1-2
+// 예제 5-2
 // function sayHello() {
 //   console.log('Hello!'); 
 // }
@@ -17,7 +17,7 @@ function sayGoodBye() {
 //   console.log('Good bye.'); 
 // }
 
-// 샘플 5-1-3
+// 예제 5-3
 // function sayHello_() {
 //   console.log('Hello!'); 
 // }
