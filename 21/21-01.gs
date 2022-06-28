@@ -1,4 +1,4 @@
-// 샘플21-1-1
-// function onOpen() {
-//  Browser.msgBox('Hello');
-// }
+// 예제 21
+function onOpen() {
+  Browser.msgBox('Hello');
+}
