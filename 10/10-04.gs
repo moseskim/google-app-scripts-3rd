@@ -20,7 +20,6 @@ function myFunction10_04_01() {
 
 function myFunction10_04_02() {  
   const id = '********'; //파일 ID
-
   const file = DriveApp.getFileById(id);
     
   const movedFile = file.makeCopy('sea[사본을_다른_폴더로_이동].png');
