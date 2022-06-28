@@ -1,4 +1,4 @@
-// 샘플 5-2-1
+// 예제 5-11
 const sayHello_ = function() {
   console.log('Hello!'); 
 };
